@@ -1,28 +1,28 @@
-package entidades;
+package Entidades;
 /*
 
 */
 public class Perro {
 
     private String nombre;
-    private boolean callejero;
-    private Integer peso;
     private Integer edad;
+    private boolean callejero;
     private String raza;
-    private String color;
-    private boolean amigable;
+    private double peso;
+    private double altura;
+    private String colorPelo;
 
     public Perro() {
     }
 
-    public Perro(String nombre, boolean callejero, Integer peso, Integer edad, String raza, String color, boolean amigable) {
+    public Perro(String nombre, Integer edad, boolean callejero, String raza, double peso, double altura, String colorPelo) {
         this.nombre = nombre;
-        this.callejero = callejero;
-        this.peso = peso;
         this.edad = edad;
+        this.callejero = callejero;
         this.raza = raza;
-        this.color = color;
-        this.amigable = amigable;
+        this.peso = peso;
+        this.altura = altura;
+        this.colorPelo = colorPelo;
     }
 
     public String getNombre() {
@@ -33,28 +33,20 @@ public class Perro {
         this.nombre = nombre;
     }
 
-    public boolean isCallejero() {
-        return callejero;
-    }
-
-    public void setCallejero(boolean callejero) {
-        this.callejero = callejero;
-    }
-
-    public Integer getPeso() {
-        return peso;
-    }
-
-    public void setPeso(Integer peso) {
-        this.peso = peso;
-    }
-
     public Integer getEdad() {
         return edad;
     }
 
     public void setEdad(Integer edad) {
         this.edad = edad;
+    }
+
+    public boolean isCallejero() {
+        return callejero;
+    }
+
+    public void setCallejero(boolean callejero) {
+        this.callejero = callejero;
     }
 
     public String getRaza() {
@@ -65,25 +57,34 @@ public class Perro {
         this.raza = raza;
     }
 
-    public String getColor() {
-        return color;
+    public double getPeso() {
+        return peso;
     }
 
-    public void setColor(String color) {
-        this.color = color;
+    public void setPeso(double peso) {
+        this.peso = peso;
     }
 
-    public boolean isAmigable() {
-        return amigable;
+    public double getAltura() {
+        return altura;
     }
 
-    public void setAmigable(boolean amigable) {
-        this.amigable = amigable;
+    public void setAltura(double altura) {
+        this.altura = altura;
+    }
+
+    public String getColorPelo() {
+        return colorPelo;
+    }
+
+    public void setColorPelo(String colorPelo) {
+        this.colorPelo = colorPelo;
     }
 
     @Override
     public String toString() {
-        return "Perro{" + "nombre=" + nombre + ", callejero=" + callejero + ", peso=" + peso + ", edad=" + edad + ", raza=" + raza + ", color=" + color + ", amigable=" + amigable + '}';
+        return "\n Perro: " + "\n Nombre: " + nombre + "\n Edad: " + edad + "\n Callejero: " + callejero 
+        + "\n Raza: " + raza + "\n Peso: " + peso + "\n Altura:" + altura + "\n Color de pelo: " + colorPelo;
     }
     
     
