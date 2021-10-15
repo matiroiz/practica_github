@@ -1,5 +1,7 @@
 package entidades;
 
+import java.util.ArrayList;
+
 /**
  * Pablo Fernando Martinez
  */
@@ -11,19 +13,20 @@ public class Pato {
     private boolean volador;
     private String nombre;
     private Integer edad;
+    ArrayList<Pato> fetoPatito = new ArrayList(99999);
 
     public Pato() {
 
     }
 
-    public Pato(String color, String tamaño, String especie, boolean volador, String nombre, Integer edad){
-        this.color=color;
-        this.tamaño= tamaño;
+    public Pato(String color, String tamaño, String especie, boolean volador, String nombre, Integer edad) {
+        this.color = color;
+        this.tamaño = tamaño;
         this.especie = especie;
         this.volador = volador;
         this.nombre = nombre;
         this.edad = edad;
-        
+
     }
 
     public String getTamaño() {
@@ -33,6 +36,7 @@ public class Pato {
     public void setTamaño(String tamaño) {
         this.tamaño = tamaño;
     }
+
     public String getEspecie() {
         return especie;
     }
@@ -72,5 +76,21 @@ public class Pato {
     public void setEdad(Integer edad) {
         this.edad = edad;
     }
+
+    public ArrayList<Pato> getFetoPatito() {
+        return fetoPatito;
+    }
+
+    public void setFetoPatito(ArrayList<Pato> fetoPatito) {
+        this.fetoPatito = fetoPatito;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString(); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    
+    
 
 }
