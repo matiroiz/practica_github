@@ -87,7 +87,7 @@ public class Pato {
 
     @Override
     public String toString() {
-        return super.toString(); //To change body of generated methods, choose Tools | Templates.
+        return "Perro{" + "color=" + color + ", tamaño=" + tamaño + ", especie=" + especie + ", volador=" + volador + ", nombre" + nombre + ", edad=" + edad + "}";
     }
 
     
