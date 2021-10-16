@@ -87,7 +87,7 @@ public class Pato {
 
     @Override
     public String toString() {
-        return "Perro{" + "color=" + color + ", tamaño=" + tamaño + ", especie=" + especie + ", volador=" + volador + ", nombre" + nombre + ", edad=" + edad + "}";
+        return "Pato{" + "color=" + color + ", tamaño=" + tamaño + ", especie=" + especie + ", volador=" + volador + ", nombre" + nombre + ", edad=" + edad + "}";
     }
 
     
