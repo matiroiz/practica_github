@@ -13,7 +13,7 @@ public class Pato {
     private boolean volador;
     private String nombre;
     private Integer edad;
-    ArrayList<Pato> fetoPatito = new ArrayList(99999);
+    ArrayList<Pato> feoPatito = new ArrayList(99999);
 
     public Pato() {
 
@@ -78,19 +78,24 @@ public class Pato {
     }
 
     public ArrayList<Pato> getFetoPatito() {
-        return fetoPatito;
+        return feoPatito;
     }
 
     public void setFetoPatito(ArrayList<Pato> fetoPatito) {
-        this.fetoPatito = fetoPatito;
+        this.feoPatito = fetoPatito;
     }
 
     @Override
     public String toString() {
-        return "Pato{" + "color=" + color + ", tamaño=" + tamaño + ", especie=" + especie + ", volador=" + volador + ", nombre" + nombre + ", edad=" + edad + "}";
+        return "Pato{" + "color=" + color + ", tamaño=" + tamaño + ", especie=" + especie + ", volador=" + volador + ", nombre=" + nombre + ", edad=" + edad + ", feoPatito=" + feoPatito + '}';
+
     }
 
+}
+
+    
+
     
     
 
-}
+
